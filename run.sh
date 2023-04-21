@@ -1,3 +1,3 @@
 pkill -f myapp
-test -f nohup.out && rm nohup.out
-nohup python3 myapp.py &
+test -f ~/flask/nohup.out && rm ~/flask/nohup.out
+nohup python3 myapp.py &> ~/flask/nohup.out
