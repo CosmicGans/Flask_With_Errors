@@ -5,8 +5,8 @@ metrics = Metrics()
 @app.route('/addition')
 def add_numbers():
     num1 = int(request.args.get('num1')) 
-    num2 = int(request.args.get('nu2'))
-    result = num1 + num2 
+    num2 = int(request.args.get('num2'))
+    result = num1 + nu2 
 
 
     temp= render_template('results.html', num1=num1, num2=num2, result=result) 
