@@ -5,7 +5,7 @@ metrics = Metrics()
 @app.route('/addition')
 def add_numbers():
     num1 = int(request.args.get('num1')) 
-    num2 = int(request.args.get('num2'))
+    num2 = int(request.args.get('nu2'))
     result = num1 + num2 
 
 
@@ -13,15 +13,15 @@ def add_numbers():
     return temp
 @app.route('/average')
 def average(): 
-    return metrics.average()
+    return metrics.get_current_average()
 
 
-@app.route('/add_and_average')
+@app.route('/add_then_average')
 def add_and_average():  
     
     num1 = int(request.args.get('num1'))   
-    average = metrics.average()
-    metrics.add(num1)
+    average = metrics.get_current_average()
+    metrics.append(num1)
     return average
   
 

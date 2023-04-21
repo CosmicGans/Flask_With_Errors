@@ -1,1 +1,1 @@
- curl http://localhost:5000/add_and_average?num1=2
+ curl http://localhost:5000/add_then_average?num1=2
