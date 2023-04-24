@@ -7,13 +7,13 @@ class Metrics:
             self.numbers_list = [] 
     
 
-    def average(self): 
+    def get_current_average(self): 
         return sum(self.numbers_list) / len(self.numbers_list) 
 
-    def sum(self): 
+    def get_current_sum(self): 
         return sum(self.numbers_list) 
 
-    def add(self, integer): 
+    def append(self, integer): 
         self.numbers_list.append(integer) 
     def reset(self): 
         self.numbers_list = []
